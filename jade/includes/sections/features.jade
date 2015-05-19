@@ -1,0 +1,13 @@
+include ../vars
+include ../mixins
+
+block features
+	.features
+		.features_wrap
+			.features_title features
+			.heart
+			ul.features_list
+				- for(var i=0; i<features.arrTitle.length; i++)
+					li.features_item(class=features.arrTitle[i])
+						a.features_link(href="#" title=features.arrTitle[i])= features.arrTitle[i]
+						.features_text= features.arrText[i]

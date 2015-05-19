@@ -1,0 +1,21 @@
+include includes/vars
+include includes/mixins
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title Brandi
+		link(rel="stylesheet" href="styles/styles.css")
+	body
+		.wrapper
+			include includes/sections/header
+			include includes/sections/features
+			include includes/sections/works
+			include includes/sections/team
+			include includes/sections/facts
+			include includes/sections/contacts
+			include includes/sections/footer
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+		script(src="js/scripts.js")

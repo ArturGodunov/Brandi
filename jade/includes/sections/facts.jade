@@ -1,0 +1,13 @@
+include ../vars
+include ../mixins
+
+block facts
+	.facts
+		.facts_title Some Fun Facts
+		.heart.heart_light
+		.facts_list_wrap
+			ul.facts_list
+				- for(var i=0; i<facts.arrNumber.length; i++)
+					li.facts_item(class=facts.arrIco[i])
+						.facts_number= facts.arrNumber[i]
+						.facts_text= facts.arrText[i]

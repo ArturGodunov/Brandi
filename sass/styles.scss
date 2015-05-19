@@ -1,0 +1,30 @@
+@import "compass/reset";
+@import "includes/fonts";
+@import "includes/vars";
+@import "includes/extends";
+
+html{
+	height: 100%;
+	font: 10px/1 Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+body{
+	height: 100%;
+}
+.wrapper {
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 1600px;
+	min-height: 100%;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0 0 410px;
+}
+
+@import "includes/sections/_header";
+@import "includes/sections/_features";
+@import "includes/sections/_works";
+@import "includes/sections/_team";
+@import "includes/sections/_facts";
+@import "includes/sections/_contacts";
+@import "includes/sections/_footer";

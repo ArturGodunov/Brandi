@@ -1,0 +1,21 @@
+include ../vars
+include ../mixins
+
+block works
+	.works
+		.works_title works
+		.heart
+		.works_text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+		ul.works_nav_list
+			each val in worksNav
+				if val==="all"
+					li.works_nav_item.active= val
+				else
+					li.works_nav_item= val
+		ul.works_img_list
+			each val in worksImg
+				li.works_img_item
+					img.works_img_link(src="images/work_"+val+".jpg" title=val)
+					.works_img_hover
+						.works_img_hover_title Labore et dolore magnam
+						.works_img_hover_text Photography

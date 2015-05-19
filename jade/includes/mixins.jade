@@ -1,0 +1,11 @@
+mixin input(obj)
+	dl(class=obj.className)
+		dt(class=obj.className+"_term")
+			label(for=obj.className)= obj.labelText
+		dd(class=obj.className+"_determ")
+			if obj.button
+				button(id=obj.className name=obj.className)= obj.textButton
+			else if obj.textarea
+				textarea(id=obj.className rows="1" name=obj.className placeholder=obj.placeholder)
+			else
+				input(id=obj.className type=obj.type name=obj.className placeholder=obj.placeholder)

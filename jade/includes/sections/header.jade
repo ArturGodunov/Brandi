@@ -1,0 +1,21 @@
+include ../vars
+include ../mixins
+
+block header
+	header.header
+		.header_top
+			.header_logo
+				a.logo(href="#" title="Brandi") Brandi
+				span.logo_tag I’am your tag line
+			nav.nav
+				ul.nav_list
+					each val in nav
+						li.nav_item= val
+		h1.header_title Meet <span>Brandi</span>!
+		h2.header_title_tag <span>/creative</span> one page template.
+		h4.header_title_team We are a team of professionals
+		.header_social
+			a.twitter(href="#" title="Twitter")
+			a.facebook(href="#" title="Facebook")
+			a.google(href="#" title="Google +")
+			a.dribbble(href="#" title="Dribbble")

@@ -1,0 +1,23 @@
+include ../vars
+include ../mixins
+
+block team
+	.team
+		.team_title meet our team
+		.heart
+		.team_text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+		.team_list_wrap
+			ul.team_list
+				- for(var i=0; i<team.arrImg.length; i++)
+					li.team_item
+						.team_img_wrap
+							img.team_img(src="images/"+team.arrImg[i]+".jpg" title=team.arrName[i])
+							.team_hover
+								.team_hover_title Nemo enim ipsam voluptatem quia voluptas
+								.team_hover_text sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
+								ul.team_hover_social_list
+									a.team_hover_twitter(href="#" title="Twitter")
+									a.team_hover_facebook(href="#" title="Facebook")
+									a.team_hover_google(href="#" title="Google+")
+						.team_name= team.arrName[i]
+						.team_position= team.arrPosition[i]
