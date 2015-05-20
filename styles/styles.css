@@ -245,7 +245,7 @@ body {
 }
 
 .header {
-  background: url("../../../images/header_bg.jpg") no-repeat 50% 50%;
+  background: url("../images/header_bg.jpg") no-repeat 50% 50%;
   background-size: cover;
   text-align: center;
   padding: 0 0 52px;
@@ -641,7 +641,7 @@ body {
 .facts {
   text-align: center;
   padding: 100px 0 158px;
-  background: url("../../../images/facts_bg.jpg") no-repeat 50% 50%;
+  background: url("../images/facts_bg.jpg") no-repeat 50% 50%;
   background-size: cover;
 }
 
