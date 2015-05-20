@@ -11,15 +11,19 @@
 }
 .footer_wrap{
 	@extend %width1170;
-	margin-top: 100px;
+}
+.footer_list{
+	margin: 100px 0 0 -30px;
 	@extend %clearfix;
 }
-
-
-.footer_logo_text{
+.footer_item{
 	float: left;
-	width: 256px;
+	width: 25%;
+	box-sizing: border-box;
+	padding: 0 0 0 30px;
 }
+
+
 .footer_logo{
 	font: 2.8rem/1 Pacifico-Regular, Arial, Helvetica, sans-serif;
 	text-decoration: none;
@@ -32,11 +36,6 @@
 
 
 //
-.footer_subscribe{
-	float: left;
-	width: 272px;
-	margin: 0 0 0 44px;
-}
 .footer_subscribe_title{
 	font: 1.4rem/1 OpenSans-Bold, Arial, Helvetica, sans-serif;
 	margin: 14px 0 0;
@@ -63,21 +62,16 @@
 .footer_subscribe_text{
 	font: 1.3rem/1.8 OpenSans, Arial, Helvetica, sans-serif;
 	margin: 20px 0 0;
-	width: 236px;
 }
 
 
 //
-.footer_explore{
-	float: left;
-	margin: 0 0 0 30px;
-}
 .footer_explore_title{
 	font: 1.4rem/1 OpenSans-Bold, Arial, Helvetica, sans-serif;
 	margin: 14px 0 0;
 }
 .footer_explore_list{
-	margin: 42px 0 0;
+	margin: 44px 0 0;
 	@extend %clearfix;
 }
 .footer_explore_item{
@@ -103,9 +97,8 @@
 
 //
 .footer_copyright{
-	float: left;
-	margin: 66px 0 0 82px;
-	width: 214px;
+//	margin: 66px 0 0 82px;
+	margin: 66px 0 0;
 }
 .footer_created{
 	font: 1.3rem/1.8 OpenSans, Arial, Helvetica, sans-serif;

@@ -10,21 +10,23 @@
 }
 .works_text{
 	@extend %section_text;
+	padding: 0 20px;
 }
 .works_nav_list{
-	margin: 48px 0 0;
+	margin: 28px 0 0;
 	@extend %clearfix;
 	display: inline-block;
+	padding: 0 20px;
 }
 .works_nav_item{
-	float: left;
+	display: inline-block;
 	font: 1.4rem/1 OpenSans-Bold, Arial, Helvetica, sans-serif;
 	color: $color_features_list_title;
 	cursor: pointer;
 	text-transform: capitalize;
 	padding: 10px 20px;
 	border-radius: 6px;
-	margin: 0 10px 0 0;
+	margin: 20px 10px 0 0;
 	&:last-child{
 		margin: 0;
 	}
@@ -47,6 +49,7 @@
 .works_img_link{
 	display: block;
 	cursor: pointer;
+	width: 100%;
 }
 .works_img_hover{
 	@extend %img_hover;

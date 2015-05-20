@@ -10,6 +10,7 @@
 }
 .team_text{
 	@extend %section_text;
+	padding: 0 20px;
 }
 .team_list_wrap{
 	@extend %width1170;
@@ -31,7 +32,6 @@
 .team_img{
 	display: block;
 	width: 100%;
-	height: auto;
 }
 .team_hover{
 	@extend %img_hover;

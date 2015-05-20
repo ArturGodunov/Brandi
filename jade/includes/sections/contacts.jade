@@ -6,23 +6,24 @@ block contacts
 		.contacts_title Let’s Discuss
 		.heart
 		.contacts_text Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-		.contacts_adress
-			.contacts_adress_title Cras at ultrices erat, sed vulputate!
-			.contacts_adress_text.
-				2345 Setwant natrer, 1234,<br>
-				Washington. United States.<br>
-				(401) 1234 567<br>
-				hello@brandi.com<br>
-				ww.brandi.com
-		ul.contacts_social_list
-			each val in contactSocial
-				li.contacts_social_item
-					a(class="contacts_"+val href="#" title=val)
-		form.message(action="" method="post")
-			.message_title Say hello!
-			.message_name_email
-				+input(name)
-				+input(email)
-			+input(textarea)
-			+input(send)
+		.contacts_wrap
+			.contacts_adress
+				.contacts_adress_title Cras at ultrices erat, sed vulputate!
+				.contacts_adress_text.
+					2345 Setwant natrer, 1234,<br>
+					Washington. United States.<br>
+					(401) 1234 567<br>
+					hello@brandi.com<br>
+					ww.brandi.com
+			ul.contacts_social_list
+				each val in contactSocial
+					li.contacts_social_item
+						a(class="contacts_"+val href="#" title=val)
+			form.message(action="" method="post")
+				.message_title Say hello!
+				.message_name_email
+					+input(name)
+					+input(email)
+				+input(textarea)
+				+input(send)
 	.map

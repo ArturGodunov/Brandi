@@ -28,3 +28,285 @@ body{
 @import "includes/sections/_facts";
 @import "includes/sections/_contacts";
 @import "includes/sections/_footer";
+
+@media only screen and (max-width: 1200px){
+	.team_hover{
+		opacity: 1;
+		background: transparent;
+	}
+	.team_hover_title, .team_hover_text{
+		display: none;
+	}
+	.team_hover_social_list{
+		position: absolute;
+		bottom: 0;
+		left: 40%;
+		transform: translateX(-30%);
+	}
+}
+@media only screen and (max-width: 1100px){
+	.wrapper{
+		padding-bottom: 500px;
+	}
+	.footer{
+		height: 500px;
+	}
+	.footer_list{
+		margin-right: -1%;
+	}
+	.footer_item{
+		width: 33%;
+		&:last-child{
+			margin-left: 33%;
+		}
+	}
+}
+@media only screen and (max-width: 1050px){
+	.team{
+		padding-bottom: 100px;
+	}
+	.team_list{
+		margin-right: -1%;
+	}
+	.team_item{
+		width: 33%;
+		&:last-child{
+			margin-top: 40px;
+			margin-left: 33%;
+		}
+	}
+}
+@media only screen and (max-width: 1000px){
+	.works_img_item{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 900px){
+	.features_list{
+		margin-right: 0;
+	}
+	.features_item{
+		width: 50%;
+		&:last-child{
+			margin: 40px 0 0 25%;
+		}
+	}
+
+
+	.contacts_social_list{
+		display: none;
+	}
+	.message{
+		margin-right: 0;
+		max-width: 1000px;
+	}
+	.message_name_email{
+		margin-right: -30px;
+	}
+	.textarea{
+		padding-right: 0;
+	}
+	[name=send]{
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width: 800px){
+	.team_list{
+		margin-right: 0;
+	}
+	.team_item{
+		width: 50%;
+		&:last-child, &:nth-child(3){
+			margin-top: 40px;
+			margin-left: 0;
+		}
+	}
+
+
+	.facts_list{
+		margin-right: -1%;
+	}
+	.facts_item{
+		width: 33%;
+		&:last-child{
+			margin-top: 220px;
+			margin-left: 33%;
+		}
+	}
+
+
+	.contacts_adress{
+		display: none;
+	}
+	.message{
+		margin-left: 0;
+	}
+
+
+	.wrapper{
+		padding-bottom: 570px;
+	}
+	.footer{
+		height: 570px;
+	}
+	.footer_list{
+		margin-right: 0;
+	}
+	.footer_item{
+		width: 50%;
+		&:last-child{
+			margin-left: 0;
+		}
+		&:nth-child(3){
+			margin-top: 50px;
+		}
+	}
+}
+@media only screen and (max-width: 700px){
+	.nav_list{
+		display: none;
+	}
+	.header_title{
+		font-size: 4.2rem;
+		& span{
+			font-size: inherit;
+		}
+	}
+	.header_title_tag{
+		font-size: 2.8rem;
+	}
+	.header_title_team{
+		font-size: 1.4rem;
+	}
+
+
+	.features_list{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.features_item{
+		width: 100%;
+		margin-top: 40px;
+		&:first-child{
+			margin-top: 0;
+		}
+		&:last-child{
+			margin-left: 0;
+		}
+	}
+}
+@media only screen and (max-width: 600px){
+	.facts{
+		padding-bottom: 100px;
+	}
+	.facts_list{
+		margin-right: 0;
+	}
+	.facts_item{
+		width: 50%;
+		&:last-child, &:nth-child(3){
+			margin-top: 220px;
+			margin-left: 0;
+		}
+	}
+}
+@media only screen and (max-width: 550px){
+	.wrapper{
+		padding-bottom: 650px;
+	}
+	.footer{
+		height: 650px;
+	}
+	.footer_list{
+		margin-top: 50px;
+	}
+	.footer_item{
+		width: 100%;
+		margin-top: 30px;
+		&:nth-child(3){
+			margin-top: 30px;
+		}
+	}
+	.footer_text, .footer_subscribe_button, .footer_explore_list{
+		margin-top: 20px;
+	}
+	.footer_subscribe_text, .footer_explore_link{
+		margin-top: 10px;
+	}
+	.footer_created::before{
+		display: none;
+	}
+	.copyright{
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 500px){
+	.header_title{
+		font-size: 3.2rem;
+		& span{
+			font-size: inherit;
+		}
+	}
+	.header_title_tag{
+		font-size: 2rem;
+	}
+	.header_title_team{
+		font-size: 1.2rem;
+	}
+
+
+	.features{
+		padding-bottom: 100px;
+	}
+	.features_item{
+		padding-left: 56px;
+		&::before{
+			left: 14px;
+		}
+		&::after{
+			left: 0;
+		}
+	}
+
+
+	.works_img_item{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 450px){
+	.wrapper{
+		padding-bottom: 700px;
+	}
+	.footer{
+		height: 700px;
+	}
+}
+@media only screen and (max-width: 400px){
+	.team_item{
+		width: 100%;
+		&:nth-child(n+2){
+			margin-top: 40px;
+		}
+	}
+
+
+	.facts_item{
+		width: 100%;
+		&:last-child, &:nth-child(3), &:nth-child(2){
+			margin-top: 220px;
+		}
+	}
+
+
+	.message_name_email{
+		margin-right: 0;
+		height: 170px;
+	}
+	.name, .email{
+		width: 100%;
+		padding-right: 0;
+	}
+	.email{
+		margin-top: 50px;
+	}
+}

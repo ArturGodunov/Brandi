@@ -4,22 +4,23 @@ include ../mixins
 block footer
 	footer.footer
 		.footer_wrap
-			.footer_logo_text
-				a.footer_logo(href="#" title="Brandi") Brandi
-				.footer_text eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			.footer_subscribe
-				.footer_subscribe_title Subscribe
-				.footer_subscribe_button
-				.footer_subscribe_text eusmod tempor incididunt ut labore et dolore magna aliqua.
-			.footer_explore
-				.footer_explore_title Explore
-				ul.footer_explore_list
-					li.footer_explore_item
-						each val in explore1
-							a.footer_explore_link(href="#")= val
-					li.footer_explore_item
-						each val in explore2
-							a.footer_explore_link(href="#")= val
-			.footer_copyright
-				.footer_created Created with<span>by</span> <a href="#">themecurve</a>, exclusive for kreativeshowcase
-				.copyright © 2014 Brandi. All Rights Reserved.
+			ul.footer_list
+				li.footer_logo_text.footer_item
+					a.footer_logo(href="#" title="Brandi") Brandi
+					.footer_text eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				li.footer_subscribe.footer_item
+					.footer_subscribe_title Subscribe
+					.footer_subscribe_button
+					.footer_subscribe_text eusmod tempor incididunt ut labore et dolore magna aliqua.
+				li.footer_explore.footer_item
+					.footer_explore_title Explore
+					ul.footer_explore_list
+						li.footer_explore_item
+							each val in explore1
+								a.footer_explore_link(href="#")= val
+						li.footer_explore_item
+							each val in explore2
+								a.footer_explore_link(href="#")= val
+				li.footer_copyright.footer_item
+					.footer_created Created with<span>by</span> <a href="#">themecurve</a>, exclusive for kreativeshowcase
+					.copyright © 2014 Brandi. All Rights Reserved.

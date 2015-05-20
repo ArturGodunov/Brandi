@@ -1,6 +1,6 @@
 .contacts{
 	text-align: center;
-	padding: 100px 0 0;
+	padding: 100px 20px 0;
 	@extend %clearfix;
 	@extend %width1170;
 }
@@ -32,7 +32,7 @@
 
 
 .message{
-	margin: 0 0 0 300px;
+	margin: 0 70px 0 300px;
 	text-align: left;
 	max-width: 800px;
 	@extend %clearfix;

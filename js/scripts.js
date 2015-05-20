@@ -4,6 +4,9 @@ $(document).ready(function() {
     hoverTeamImg();
     scrollTeaxtarea();
 });
+$(window).on("resize", function(){
+    hoverTeamImg();
+});
 
 function hoverHeaderSocial() {
     $(".header_social a").hover(function() {
@@ -30,17 +33,21 @@ function hoverWorksImg() {
 }
 
 function hoverTeamImg() {
-    $(".team_img_wrap").hover(function() {
-        $(this).find(".team_hover").animate({
-            opacity: 1
-        }, 500);
-        $(this).closest(".team_item").find(".team_name").addClass("team_name_hover");
-    }, function() {
-        $(this).find(".team_hover").animate({
-            opacity: 0
-        }, 400);
-        $(this).closest(".team_item").find(".team_name").removeClass("team_name_hover");
-    });
+    if ($(window).width() >= 1200) {
+        $(".team_img_wrap").hover(function () {
+            $(this).find(".team_hover").animate({
+                opacity: 1
+            }, 500);
+            $(this).closest(".team_item").find(".team_name").addClass("team_name_hover");
+        }, function () {
+            $(this).find(".team_hover").animate({
+                opacity: 0
+            }, 400);
+            $(this).closest(".team_item").find(".team_name").removeClass("team_name_hover");
+        });
+    } else {
+        $(".team_img_wrap").off("mouseenter mouseleave");
+    }
 }
 
 function scrollTeaxtarea() {

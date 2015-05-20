@@ -119,3 +119,11 @@
 		font: 1.3rem/1 OpenSans, Arial, Helvetica, sans-serif;
 	}
 }
+%header_title_team_pseudo{
+	content: "";
+	display: block;
+	width: 11%;
+	border-top: 1px solid $color_header_title_tag_span;
+	position: absolute;
+	top: 50%;
+}
