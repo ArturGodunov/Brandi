@@ -2,15 +2,17 @@ include ../vars
 include ../mixins
 
 block header
-	header.header
+	header.header(data-section="home")
 		.header_top
 			.header_logo
 				a.logo(href="#" title="Brandi") Brandi
 				span.logo_tag I’am your tag line
 			nav.nav
+				.nav_menu
 				ul.nav_list
+					.nav_close
 					each val in nav
-						li.nav_item= val
+						li.nav_item(id=val.toLowerCase())= val
 		h1.header_title Meet <span>Brandi</span>!
 		h2.header_title_tag <span>/creative</span> one page template.
 		h4.header_title_team We are a team of professionals

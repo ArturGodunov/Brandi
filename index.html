@@ -8,16 +8,18 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header data-section="home" class="header">
         <div class="header_top">
           <div class="header_logo"><a href="#" title="Brandi" class="logo">Brandi</a><span class="logo_tag">I’am your tag line</span></div>
           <nav class="nav">
+            <div class="nav_menu"></div>
             <ul class="nav_list">
-              <li class="nav_item">Home</li>
-              <li class="nav_item">Features</li>
-              <li class="nav_item">Works</li>
-              <li class="nav_item">Team</li>
-              <li class="nav_item">Contact</li>
+              <div class="nav_close"></div>
+              <li id="home" class="nav_item">Home</li>
+              <li id="features" class="nav_item">Features</li>
+              <li id="works" class="nav_item">Works</li>
+              <li id="team" class="nav_item">Team</li>
+              <li id="contact" class="nav_item">Contact</li>
             </ul>
           </nav>
         </div>
@@ -26,7 +28,7 @@
         <h4 class="header_title_team">We are a team of professionals</h4>
         <div class="header_social"><a href="#" title="Twitter" class="twitter"></a><a href="#" title="Facebook" class="facebook"></a><a href="#" title="Google +" class="google"></a><a href="#" title="Dribbble" class="dribbble"></a></div>
       </header>
-      <div class="features">
+      <div data-section="features" class="features">
         <div class="features_wrap">
           <div class="features_title">features</div>
           <div class="heart"></div>
@@ -43,7 +45,7 @@
           </ul>
         </div>
       </div>
-      <div class="works">
+      <div data-section="works" class="works">
         <div class="works_title">works</div>
         <div class="heart"></div>
         <div class="works_text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</div>
@@ -105,7 +107,7 @@
           </li>
         </ul>
       </div>
-      <div class="team">
+      <div data-section="team" class="team">
         <div class="team_title">meet our team</div>
         <div class="heart"></div>
         <div class="team_text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</div>
@@ -182,7 +184,7 @@
           </ul>
         </div>
       </div>
-      <div class="contacts">
+      <div data-section="contact" class="contacts">
         <div class="contacts_title">Let’s Discuss</div>
         <div class="heart"></div>
         <div class="contacts_text">Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</div>
@@ -272,7 +274,8 @@
         </div>
       </footer>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")-->
+    <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

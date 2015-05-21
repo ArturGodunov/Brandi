@@ -1,24 +1,23 @@
 $(document).ready(function() {
-    hoverHeaderSocial();
     hoverWorksImg();
     hoverTeamImg();
     scrollTeaxtarea();
+    showMenu();
+
+    $(".nav_item").on("click", function() {
+        $(".nav_list").hide();
+        showSection($(this).attr("id"));
+    });
 });
+
+$(window).scroll(function(){
+    checkSection();
+});
+
 $(window).on("resize", function(){
     hoverTeamImg();
 });
 
-function hoverHeaderSocial() {
-    $(".header_social a").hover(function() {
-        $(this).animate({
-            opacity: 1
-        }, 400);
-    }, function() {
-        $(this).animate({
-            opacity: 0.3
-        }, 300);
-    });
-}
 
 function hoverWorksImg() {
     $(".works_img_item").hover(function() {
@@ -57,3 +56,32 @@ function scrollTeaxtarea() {
     });
 }
 
+function showMenu(){
+    var navList=$(".nav_list");
+    $(".nav_menu").on("click", function() {
+        navList.show();
+    });
+    $(".nav_close").on("click", function() {
+        navList.hide();
+    });
+}
+
+function showSection(section) {
+    var reqSection = $("[data-section]").filter('[data-section="' + section + '"]'),
+        reqSectionPos = reqSection.offset().top;
+    $("body, html").animate({scrollTop: reqSectionPos}, 500);
+}
+
+function checkSection() {
+    $("[data-section]").each(function(){
+        var $this = $(this),
+            topEdge = $this.offset().top,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+                reqLink = $(".nav_item").filter("#" + currentId);
+            reqLink.addClass("active").siblings().removeClass("active");
+        }
+    });
+}

@@ -4,11 +4,17 @@
 //	height: 100vh;
 	text-align: center;
 	padding: 0 0 52px;
+	position: relative;
+	z-index: 1;
 }
 .header_top{
 	@extend %clearfix;
 	@extend %width1170;
-	position: relative;
+	height: 75px;
+	position: fixed;
+	left: 50%;
+	width: calc(100vw - 40px);
+	transform: translateX(-50%);
 	&::before{
 		content: "";
 		display: block;
@@ -49,6 +55,9 @@
 .nav{
 	float: right;
 }
+.nav_list{
+	@extend %clearfix;
+}
 .nav_item{
 	float: left;
 	cursor: pointer;
@@ -57,7 +66,7 @@
 	padding: 36px 0 26px;
 	margin: 0 30px 0 0;
 	&:last-child{
-		margin: 0;
+		margin-right: 0;
 	}
 	&:hover{
 		border-top: 1px solid #32b0ee;
@@ -69,7 +78,7 @@
 .header_title{
 	font: 6.2rem/1 OpenSans-Light, Arial, Helvetica, sans-serif;
 	color: #fff;
-	margin: 29% 0 0;
+	padding-top: calc(29% + 75px);
 	& span{
 		font: 6.2rem/1 OpenSans-Bold, Arial, Helvetica, sans-serif;
 	}
@@ -87,6 +96,7 @@
 	color: transparentize(#fff, 0.1);
 	margin: 2% 0 0;
 	display: inline-block;
+	z-index: -1;
 	position: relative;
 	&::before{
 		@extend %header_title_team_pseudo;
@@ -104,6 +114,10 @@
 	& a{
 		display: inline-block;
 		opacity: 0.3;
+		&:hover{
+			opacity: 1;
+			transition: opacity 0.5s;
+		}
 	}
 }
 .twitter{
