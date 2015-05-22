@@ -5,7 +5,9 @@ $(document).ready(function() {
     showMenu();
 
     $(".nav_item").on("click", function() {
-        $(".nav_list").hide();
+        if ($(window).width() <= 700) {
+            $(".nav_list").hide();
+        }
         showSection($(this).attr("id"));
     });
 });
@@ -68,7 +70,7 @@ function showMenu(){
 
 function showSection(section) {
     var reqSection = $("[data-section]").filter('[data-section="' + section + '"]'),
-        reqSectionPos = reqSection.offset().top;
+        reqSectionPos = reqSection.offset().top + 1;
     $("body, html").animate({scrollTop: reqSectionPos}, 500);
 }
 
@@ -85,3 +87,4 @@ function checkSection() {
         }
     });
 }
+

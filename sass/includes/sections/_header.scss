@@ -68,7 +68,7 @@
 	&:last-child{
 		margin-right: 0;
 	}
-	&:hover{
+	&:hover, &.active{
 		border-top: 1px solid #32b0ee;
 		padding-top: 35px;
 	}

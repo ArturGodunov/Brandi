@@ -324,7 +324,7 @@ body {
 .nav_item:last-child {
   margin-right: 0;
 }
-.nav_item:hover {
+.nav_item:hover, .nav_item.active {
   border-top: 1px solid #32b0ee;
   padding-top: 35px;
 }
