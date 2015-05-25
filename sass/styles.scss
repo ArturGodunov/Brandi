@@ -193,6 +193,9 @@ body{
 		z-index: 2;
 		box-shadow: 3px 3px 3px 0 transparentize(#000, 0.7);
 	}
+	.expanded{
+		display: block;
+	}
 	.nav_close{
 		position: absolute;
 		top: 20px;

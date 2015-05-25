@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     $(".nav_item").on("click", function() {
         if ($(window).width() <= 700) {
-            $(".nav_list").hide();
+            $(".nav_list").removeClass("expanded");
         }
         showSection($(this).attr("id"));
     });
@@ -60,11 +60,11 @@ function scrollTeaxtarea() {
 
 function showMenu(){
     var navList=$(".nav_list");
-    $(".nav_menu").on("click", function() {
-        navList.show();
+    $(".nav_menu").on("click", function () {
+        navList.toggleClass("expanded");
     });
-    $(".nav_close").on("click", function() {
-        navList.hide();
+    $(".nav_close").on("click", function () {
+        navList.removeClass("expanded");
     });
 }
 
