@@ -253,6 +253,13 @@ body {
   padding: 0 0 410px;
 }
 
+#map-canvas {
+  height: 216px;
+  width: 100%;
+  margin: 108px 0 0;
+  background: gainsboro;
+}
+
 .header {
   background: url("../images/header_bg.jpg") no-repeat 50% 50%;
   background-size: cover;
@@ -874,12 +881,6 @@ body {
   margin: 20px 0 0;
 }
 
-.map {
-  height: 216px;
-  margin: 108px 0 0;
-  background: gainsboro;
-}
-
 .footer {
   position: absolute;
   bottom: 0;
@@ -1213,7 +1214,7 @@ body {
   .nav_item + .nav_item {
     margin-top: 30px;
   }
-  .nav_item:hover {
+  .nav_item:hover, .nav_item.active {
     padding: 0;
     border: none;
     color: #0eb493;

@@ -88,3 +88,27 @@ function checkSection() {
     });
 }
 
+/*------------------GEOLOCATION-------------------*/
+function initialize() {
+    var mapCanvas = document.getElementById('map-canvas');
+    var mapOptions = {
+        center: new google.maps.LatLng(53.9022, 27.5618),
+        zoom: 16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: !1,
+        streetViewControl: !1,
+        scrollwheel: !1,
+        panControl: !1,
+        zoomControlOptions: {position: google.maps.ControlPosition.RIGHT_CENTER}
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var styles = [{stylers: [{saturation: -100}]}];
+    map.setOptions({styles: styles});
+    var marker = new google.maps.Marker({
+        map: map,
+        draggable: !1,
+        position: mapOptions.center,
+        icon: "images/map_marker.png"
+    });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
